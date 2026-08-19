@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const links = [
@@ -17,7 +18,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col gap-16">
         <div className="flex flex-col md:flex-row justify-between items-start gap-12">
           <div className="max-w-sm">
-            <h3 className="text-2xl font-preahvihear mb-4">Stylish Nails</h3>
+            <Link href="/" className="inline-block mb-4">
+              <Image
+                src="/stylish_transparent_logo.png"
+                alt="Stylish Nails Logo"
+                width={150}
+                height={50}
+                className="h-10 w-auto object-contain"
+              />
+            </Link>
             <p className="text-white/60 text-sm leading-relaxed">
               Nails, Lashes, Brows, One Studio. Elevate your beauty experience with our premium services tailored just for you.
             </p>

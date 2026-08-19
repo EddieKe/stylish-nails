@@ -5,6 +5,7 @@ import AcademyHero from "@/components/academy/AcademyHero";
 import AcademyCourses from "@/components/academy/AcademyCourses";
 import AcademyDayInLife from "@/components/academy/AcademyDayInLife";
 import AcademyPathways from "@/components/academy/AcademyPathways";
+import AcademyGallery from "@/components/academy/AcademyGallery";
 
 export default function AcademyPage() {
   return (
@@ -13,6 +14,7 @@ export default function AcademyPage() {
       <AcademyHero />
       <AcademyCourses />
       <AcademyDayInLife />
+      <AcademyGallery />
       <AcademyPathways />
       <Footer />
     </main>

@@ -4,7 +4,13 @@ export default function AcademyTeaser() {
   return (
     <section className="relative min-h-screen flex items-center bg-gradient-to-br from-brand-black via-brand-plum to-brand-berry px-12 md:px-24 py-24 overflow-hidden">
       <div className="grid md:grid-cols-2 gap-16 items-center max-w-6xl mx-auto w-full">
-        <div className="h-[600px] rounded-2xl bg-gradient-to-br from-brand-plum to-brand-deep shadow-xl" />
+        <div className="rounded-2xl overflow-hidden shadow-xl">
+          <img
+            src="/teacher_nail_student_session.webp"
+            alt="Teacher guiding a nail student during a training session"
+            className="w-full h-auto block"
+          />
+        </div>
 
         <div>
           <h2 className="text-white text-4xl md:text-5xl font-normal leading-tight mb-3 font-preahvihear">

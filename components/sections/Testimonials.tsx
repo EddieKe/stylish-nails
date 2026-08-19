@@ -9,35 +9,35 @@ const testimonials = [
     name: "Wanjiku Kariuki",
     role: "Regular Client",
     content: "The best nail studio in Nairobi. My acrylics lasted a whole month without lifting! The attention to detail is unmatched.",
-    initials: "WK",
+    avatar: "/avatar_wanjiku_1787062172028.png",
   },
   {
     id: 2,
     name: "Omondi Otieno",
     role: "Academy Student",
     content: "Took the beginner lash course and now I have my own studio. Highly recommend their hands-on training.",
-    initials: "OO",
+    avatar: "/avatar_omondi_1787062183532.png",
   },
   {
     id: 3,
     name: "Achieng Onyango",
     role: "Bride",
     content: "They did my bridal party's nails and lashes. Flawless execution and great customer service on my big day.",
-    initials: "AO",
+    avatar: "/avatar_achieng_1787062194833.png",
   },
   {
     id: 4,
     name: "Kipchoge Mutai",
     role: "Shop Customer",
     content: "Their cuticle oil is magic. I buy it every time I drop by. Keeps my hands looking fresh between sets.",
-    initials: "KM",
+    avatar: "/avatar_kipchoge_1787062205543.png",
   },
   {
     id: 5,
     name: "Nanjala Wekesa",
     role: "Loyal Client",
     content: "I never trust anyone else with my brows. Stylish Nails sets the standard for brow shaping and lamination.",
-    initials: "NW",
+    avatar: "/avatar_nanjala_1787062216501.png",
   },
 ];
 
@@ -122,8 +122,12 @@ export default function Testimonials() {
             >
               <div>
                 <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 rounded-full bg-brand-accent flex items-center justify-center text-white font-medium text-lg font-preahvihear shrink-0">
-                    {testimonial.initials}
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 overflow-hidden bg-brand-accent/20">
+                    <img 
+                      src={testimonial.avatar} 
+                      alt={`${testimonial.name} avatar`} 
+                      className="w-full h-full object-cover" 
+                    />
                   </div>
                   <div>
                     <h3 className="text-white text-lg font-medium">{testimonial.name}</h3>

@@ -5,17 +5,20 @@ export default function AcademyPathways() {
     {
       title: "Go Independent",
       description: "We equip you with the business fundamentals, a premium starter kit, and referrals for your first clients so you can launch your own freelance career with confidence.",
-      icon: "ti-rocket"
+      icon: "ti-rocket",
+      image: "/lady_nail_student_filing.webp",
     },
     {
       title: "Join Our Team",
       description: "Standout graduates get fast-tracked for open positions at Stylish Nails. Start your career in an established, high-end studio environment.",
-      icon: "ti-building-store"
+      icon: "ti-building-store",
+      image: "/locs_lash_student.webp",
     },
     {
       title: "Keep Learning",
       description: "Education never stops. Return for advanced masterclasses in nail art, mega-volume lashing, or business scaling at exclusive alumni rates.",
-      icon: "ti-books"
+      icon: "ti-books",
+      image: "/nail_training_session1.webp",
     }
   ];
 
@@ -37,15 +40,20 @@ export default function AcademyPathways() {
           {pathways.map((pathway, idx) => (
             <div 
               key={idx} 
-              className="p-8 rounded-2xl bg-brand-plum border border-white/5 flex flex-col h-full"
+              className="rounded-2xl bg-brand-plum border border-white/5 flex flex-col h-full overflow-hidden"
             >
-              <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center mb-6">
-                <i className={`ti ${pathway.icon} text-xl text-brand-plum`}></i>
+              <div className="w-full h-48 relative">
+                <img src={pathway.image} alt={pathway.title} className="w-full h-full object-cover" />
+                <div className="absolute -bottom-5 left-8 w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-lg">
+                  <i className={`ti ${pathway.icon} text-xl text-brand-plum`}></i>
+                </div>
               </div>
-              <h3 className="text-xl text-white mb-3">{pathway.title}</h3>
-              <p className="text-white/60 text-sm font-sans flex-grow">
-                {pathway.description}
-              </p>
+              <div className="p-8 pt-10 flex flex-col flex-grow">
+                <h3 className="text-xl text-white mb-3">{pathway.title}</h3>
+                <p className="text-white/60 text-sm font-sans flex-grow">
+                  {pathway.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
