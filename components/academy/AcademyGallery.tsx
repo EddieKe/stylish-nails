@@ -89,7 +89,7 @@ export default function AcademyGallery() {
 
         <div className="mt-16 text-center">
           <a
-            href="https://wa.me/25715702251?text=Hi%20Stylish%20Nails%2C%20I%20would%20like%20to%20apply%20for%20the%20Academy%20Training!"
+            href="https://wa.me/254715702251?text=Hi%20Stylish%20Nails%2C%20I%20would%20like%20to%20apply%20for%20the%20Academy%20Training!"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center bg-brand-accent text-white px-8 py-4 rounded-full font-medium hover:bg-black transition-colors duration-300 shadow-lg hover:shadow-xl"

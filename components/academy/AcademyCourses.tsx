@@ -78,7 +78,7 @@ export default function AcademyCourses() {
                 </div>
 
                 <a
-                  href={`https://wa.me/25715702251?text=Hi%20Stylish%20Nails%2C%20I%20would%20like%20to%20apply%20for%20the%20${encodeURIComponent(course.title)}%20course!`}
+                  href={`https://wa.me/254715702251?text=Hi%20Stylish%20Nails%2C%20I%20would%20like%20to%20apply%20for%20the%20${encodeURIComponent(course.title)}%20course!`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full bg-brand-accent text-white py-4 rounded-xl font-medium hover:bg-black transition-colors duration-300"

@@ -28,7 +28,7 @@ const ServiceBlock: React.FC<ServiceBlockProps> = ({
     return () => clearInterval(interval);
   }, [images]);
 
-  const whatsappHref = `https://wa.me/+25715702251?text=${encodeURIComponent(whatsappMessage)}`;
+  const whatsappHref = `https://wa.me/+254715702251?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <div

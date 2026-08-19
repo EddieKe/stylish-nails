@@ -97,7 +97,7 @@ export default function Shop() {
 
               {/* Buy Now CTA */}
               <a
-                href={`https://wa.me/+25715702251?text=${encodeURIComponent(product.whatsappText)}`}
+                href={`https://wa.me/+254715702251?text=${encodeURIComponent(product.whatsappText)}`}
                 className="mt-auto inline-flex items-center justify-center gap-2 w-full bg-brand-accent text-white text-xs sm:text-sm font-medium px-4 py-2.5 sm:py-3 rounded-full hover:brightness-110 transition-all shadow-sm"
               >
                 <svg

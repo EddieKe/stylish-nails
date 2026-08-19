@@ -11,6 +11,9 @@ const preahvihear = Preahvihear({
 export const metadata: Metadata = {
   title: "Stylish Nails",
   description: "Nails, Lashes, Brows, One Studio.",
+  icons: {
+    icon: "/stylish_transparent_logo.png",
+  },
 };
 
 export default function RootLayout({

@@ -52,7 +52,7 @@ export default function Hero() {
 
           <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
             <a
-              href="https://wa.me/+25715702251?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment"
+              href="https://wa.me/+254715702251?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment"
               className="bg-brand-accent text-white px-6 py-3 rounded-lg text-center"
               style={{ fontSize: "13px" }}
             >
