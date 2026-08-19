@@ -22,9 +22,9 @@ export default function Footer() {
               <Image
                 src="/stylish_transparent_logo.png"
                 alt="Stylish Nails Logo"
-                width={150}
-                height={50}
-                className="h-10 w-auto object-contain"
+                width={300}
+                height={100}
+                className="h-16 md:h-24 w-auto object-contain"
               />
             </Link>
             <p className="text-white/60 text-sm leading-relaxed">
