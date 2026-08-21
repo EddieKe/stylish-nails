@@ -14,9 +14,9 @@ export default function Navbar() {
           <Image
             src="/stylish_transparent_logo.png"
             alt="Stylish Nails Logo"
-            width={200}
-            height={60}
-            className="h-14 md:h-16 w-auto object-contain"
+            width={220}
+            height={80}
+            className="h-[76px] md:h-[84px] w-auto object-contain"
             priority
           />
         </Link>
