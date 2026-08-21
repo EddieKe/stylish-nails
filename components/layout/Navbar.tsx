@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-6 left-4 right-4 md:left-12 md:right-12 lg:left-24 lg:right-24 bg-brand-plum/90 backdrop-blur-sm shadow-lg rounded-2xl font-preahvihear z-50 transition-all duration-300">
-      <div className="flex items-center justify-between px-6 py-4">
+      <div className="flex items-center justify-between px-6 py-0.5">
         <Link href="/" className="flex items-center">
           <Image
             src="/stylish_transparent_logo.png"
