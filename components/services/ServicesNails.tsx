@@ -12,82 +12,75 @@ interface Service {
 export default function ServicesNails() {
   const ACCENT = "#D93B93";
 
-  const extensionServices: Service[] = [
+  const nailServices: Service[] = [
     {
-      title: "Builder Gel",
-      description: "A flexible, natural-looking overlay that strengthens your own nail without a hard acrylic base.",
-      price: "From Ksh 2,500",
+      title: "Gel Plain",
+      description: "A flawless, durable plain gel application for a sleek and natural look.",
+      price: "Ksh 500",
       images: [],
-      whatsappMessage: "Hi Stylish Nails, I would like to book a Builder Gel service."
+      whatsappMessage: "Hi Stylish Nails, I would like to book a Gel Plain service."
+    },
+    {
+      title: "Tips, Gel & Builder",
+      description: "Enhance length and strength with tips and a protective builder gel overlay.",
+      price: "Ksh 1,000",
+      images: [],
+      whatsappMessage: "Hi Stylish Nails, I would like to book a Tips, Gel & Builder service."
+    },
+    {
+      title: "Dip-in Nails",
+      description: "A long-lasting, odor-free alternative to acrylics that provides strength and beautiful color.",
+      price: "Ksh 1,500",
+      images: [],
+      whatsappMessage: "Hi Stylish Nails, I would like to book a Dip-in Nails service."
+    },
+    {
+      title: "Tips Gum Gel",
+      description: "Flexible and lightweight gum gel extensions for a natural feel and extended length.",
+      price: "Ksh 2,000",
+      images: [],
+      whatsappMessage: "Hi Stylish Nails, I would like to book a Tips Gum Gel service."
     },
     {
       title: "Acrylics",
-      description: "Classic, durable extensions providing maximum strength and length for dramatic shapes.",
-      price: "From Ksh 3,000",
+      description: "Classic, durable extensions providing maximum strength and length for any shape you desire.",
+      price: "Ksh 2,500",
       images: [],
       whatsappMessage: "Hi Stylish Nails, I would like to book an Acrylics service."
     },
+  ];
+
+  const pedicureServices: Service[] = [
     {
-      title: "Overlays",
-      description: "A protective hard layer applied directly over your natural nails to prevent breakage while they grow.",
-      price: "From Ksh 2,000",
+      title: "Gel Pedicure",
+      description: "Deep exfoliation, cuticle detailing, and nail care finished with a long-lasting gel polish.",
+      price: "Ksh 1,000",
       images: [],
-      whatsappMessage: "Hi Stylish Nails, I would like to book an Overlays service."
-    },
-    {
-      title: "Hard Gel",
-      description: "A tough, non-porous gel extension perfect for sculpting long, durable, and shiny nails.",
-      price: "From Ksh 3,500",
-      images: [],
-      whatsappMessage: "Hi Stylish Nails, I would like to book a Hard Gel service."
-    },
-    {
-      title: "Tips",
-      description: "Pre-shaped extensions applied to the end of your natural nails to instantly add length.",
-      price: "From Ksh 1,500",
-      images: [],
-      whatsappMessage: "Hi Stylish Nails, I would like to book a Tips service."
+      whatsappMessage: "Hi Stylish Nails, I would like to book a Gel Pedicure service."
     },
   ];
 
-  const finishingServices: Service[] = [
+  const nailArtServices: Service[] = [
     {
-      title: "Gel Polish",
-      description: "Long-lasting, chip-resistant polish cured under UV light for a flawless high-gloss finish.",
-      price: "From Ksh 1,000",
+      title: "Standard Nail Art",
+      description: "Beautiful standard nail art designs included to compliment your chosen nail service.",
+      price: "FREE",
       images: [],
-      whatsappMessage: "Hi Stylish Nails, I would like to book a Gel Polish service."
+      whatsappMessage: "Hi Stylish Nails, I would like to add Standard Nail Art."
     },
     {
-      title: "Nail Art",
-      description: "Custom, hand-painted designs and embellishments tailored to your unique style.",
-      price: "From Ksh 500",
+      title: "3D Nail Art",
+      description: "Intricate, raised 3D designs to make your nails truly stand out.",
+      price: "Ksh 200",
       images: [],
-      whatsappMessage: "Hi Stylish Nails, I would like to book a Nail Art service."
-    },
-  ];
-
-  const careServices: Service[] = [
-    {
-      title: "Manicure",
-      description: "Comprehensive cuticle care, nail shaping, and a relaxing hand massage for pristine natural nails.",
-      price: "From Ksh 1,500",
-      images: [],
-      whatsappMessage: "Hi Stylish Nails, I would like to book a Manicure service."
-    },
-    {
-      title: "Pedicure",
-      description: "Deep exfoliation, cuticle detailing, and nail care to keep your feet soft, healthy, and beautiful.",
-      price: "From Ksh 2,000",
-      images: [],
-      whatsappMessage: "Hi Stylish Nails, I would like to book a Pedicure service."
+      whatsappMessage: "Hi Stylish Nails, I would like to add 3D Nail Art."
     },
   ];
 
   const groups = [
-    { label: "Extensions & Builds", items: extensionServices },
-    { label: "Finishing", items: finishingServices },
-    { label: "Care", items: careServices },
+    { label: "Nails", items: nailServices },
+    { label: "Pedicure", items: pedicureServices },
+    { label: "Nail Art", items: nailArtServices },
   ];
 
   return (
@@ -95,7 +88,7 @@ export default function ServicesNails() {
       <div className="max-w-6xl mx-auto flex flex-col gap-16">
         <div className="border-b border-white/10 pb-8">
           <p className="text-lg md:text-xl text-white/70 max-w-3xl leading-relaxed">
-            Builder gel, acrylics, overlays, hard gel, tips, nail art, manicure, pedicure — whatever your nails need, whatever look you're going for.
+            From classic gel and durable acrylics to detailed pedicures and intricate 3D nail art. Find the perfect treatment for your style.
           </p>
         </div>
 
